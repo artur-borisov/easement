@@ -1,0 +1,9 @@
+RewriteEngine Off
+Options +Indexes
+IndexIgnore codebase connector phpinfo.php
+
+AuthType Basic
+AuthName "T2-VAS Helpers"
+AuthUserFile /data/apache-vhosts/vas/.htpasswd
+AuthGroupFile /data/apache-vhosts/vas/.htgroup
+Require group admin
